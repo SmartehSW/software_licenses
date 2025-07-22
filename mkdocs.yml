@@ -1,0 +1,55 @@
+site_name: Smarteh Software Libraries with Licenses
+
+site_url: https://cloud.smarteh.com/software_licenses/
+
+
+nav:
+  - Home:
+      - Introduction: index.md
+      - Software List:
+          - Smarteh IDE: smartehIDE.md
+          - LPC Tester: LPCtester.md
+          - Beremiz & LPC Manager: beremiz.md
+          - Communication Tester: communicationTester.md
+          - xEye Python2 Version: xeyePython2.md
+          - xEye Python3 Version: xeyePython3.md
+          - Test Device Client (Full&Standalone): testDeviceClient.md
+          - Test Device Server: testDeviceServer.md
+          - Smarteh Access Manager (SAM): sam.md
+          - Smarteh BLE Mesh Provisioning Tool: bleMeshTool.md
+          - Smarteh Cloud:
+              - Smarteh Certificate Management Service: smartehCertManager.md
+              - Smarteh Management Service: smartehMgmtService.md
+              - Smarteh Cloud Services: smartehCloudServices.md
+              - Smarteh Cloud Dashboard: smartehCloudDashboard.md
+              - Smarteh MQTT Service: smartehMqttService.md
+              - Smarteh WebDAV Service: smartehWebdavBackend.md
+              - Smarteh Crossbar Router: smartehCrossbar.md
+
+  - About: about.md
+
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  - toc:
+      permalink: true
+  - tables
+
+theme:
+  name: readthedocs
+  logo: icon.ico
+  title: myPage
+
+plugins:
+  - include-markdown:
+      encoding: ascii
+      preserve_includer_indent: false
+      dedent: false
+      trailing_newlines: true
+      comments: true
+      rewrite_relative_urls: true
+      heading_offset: 0
+      start: <!--start-->
+      end: <!--end-->
+      recursive: true
+
