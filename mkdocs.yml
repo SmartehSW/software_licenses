@@ -2,7 +2,6 @@ site_name: Smarteh Software Libraries with Licenses
 
 site_url: https://cloud.smarteh.com/software_licenses/
 
-
 nav:
   - Home:
       - Introduction: index.md
@@ -37,8 +36,13 @@ markdown_extensions:
 
 theme:
   name: readthedocs
-  logo: icon.ico
-  title: myPage
+  favicon: favicon.ico
+  logo: favicon.ico
+  title: SmartehLicence
+  custom_dir: overrides
+
+extra:
+  favicon: favicon.ico
 
 plugins:
   - include-markdown:
@@ -52,4 +56,3 @@ plugins:
       start: <!--start-->
       end: <!--end-->
       recursive: true
-
